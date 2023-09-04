@@ -16,7 +16,7 @@
         <description></description>
         <display-name>ComputerServlet</display-name>
         <servlet-name>ComputerServlet</servlet-name>
-        <servlet-class>main.java.controller.computer.ComputerServlet</servlet-class>
+        <servlet-class>main.java.controller.city.ComputerServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ComputerServlet</servlet-name>
