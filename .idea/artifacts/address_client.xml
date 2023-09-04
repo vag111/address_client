@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="address_client">
+    <output-path>$PROJECT_DIR$/out/artifacts/address_client</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="address_client" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/git/repository/JavaEE_Ostapenko_PI-331/comp_club/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-3.0.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/git/repository/JavaEE_Ostapenko_PI-331/comp_club/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-3.0.0.jar" />
+          <element id="file-copy" path="E:/apache-tomcat-10.1.7/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5-migrated-0.0.1.jar" />
+          <element id="file-copy" path="E:/apache-tomcat-10.1.7/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5-migrated-0.0.1.jar" />
+          <element id="file-copy" path="E:/apache-tomcat-10.1.7/lib/tomcat-jdbc.jar" />
+          <element id="file-copy" path="E:/postgresql-42.5.0.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="address_client/web/Web" />
+    </root>
+  </artifact>
+</component>
