@@ -14,15 +14,6 @@ public class Region {
 	public Region() {
 		
 	}
-	public Region(String region, Long countryId) {
-		this.region = region;
-		this.countryId = countryId;
-	}
-	public Region(String region, Long countryId, Country country) {
-		this.region = region;
-		this.countryId = countryId;
-		this.country = country;
-	}
 	public Region(Long id, String region, Long countryId) {
 		this.id = id;
 		this.region = region;

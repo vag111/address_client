@@ -14,15 +14,6 @@ public class City {
 	public City() {
 		
 	}
-	public City(String city, Long regionId) {
-		this.city = city;
-		this.regionId = regionId;
-	}
-	public City(String city, Long regionId, Region region) {
-		this.city = city;
-		this.regionId = regionId;
-		this.region = region;
-	}
 	public City(Long id, String city, Long regionId) {
 		this.id = id;
 		this.city = city;

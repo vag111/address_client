@@ -20,28 +20,6 @@ public class Address {
 	public Address() {
 		
 	}
-	public Address(String person, String street, Integer building, Integer office, Long cityId) {
-		this.person = person;
-		this.street = street;
-		this.building = building;
-		this.office = office;
-		this.cityId = cityId;
-	}
-	public Address(String person, String street, Integer building, Integer office, Long cityId, City city) {
-		this.person = person;
-		this.street = street;
-		this.building = building;
-		this.office = office;
-		this.cityId = cityId;
-		this.city = city;
-	}
-	public Address(String person, String street, Integer building, Integer office, City city) {
-		this.person = person;
-		this.street = street;
-		this.building = building;
-		this.office = office;
-		this.city = city;
-	}
 	public Address(Long id, String person, String street, Integer building, Integer office, Long cityId) {
 		this.id = id;
 		this.person = person;
@@ -57,14 +35,6 @@ public class Address {
 		this.building = building;
 		this.office = office;
 		this.cityId = cityId;
-		this.city = city;
-	}
-	public Address(Long id, String person, String street, Integer building, Integer office, City city) {
-		this.id = id;
-		this.person = person;
-		this.street = street;
-		this.building = building;
-		this.office = office;
 		this.city = city;
 	}
 
@@ -119,7 +89,6 @@ public class Address {
 	public void setCity(City city) {
 		this.city = city;
 	}
-
 
 
 	@Override
