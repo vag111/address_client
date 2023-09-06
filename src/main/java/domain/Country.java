@@ -46,6 +46,6 @@ public class Country {
 
 	@Override
 	public String toString() {
-		return "Country{id=" + id + ", countryFull=" + countryFull + ", countryShort=" + countryShort + "}";
+		return "Country {id=" + id + ", countryFull=" + countryFull + ", countryShort=" + countryShort + "}";
 	}
 }

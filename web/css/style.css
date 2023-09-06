@@ -26,8 +26,8 @@ h3{
 }
 #container-ul-li{
     width: 500px;
-    margin-top: 82px;
-    margin-bottom: 82px;
+    margin-top: 85px;
+    margin-bottom: 85px;
     text-align: center;
 }
 form{
@@ -36,15 +36,17 @@ form{
 }
 #btn-1{
     margin-bottom: 40px;
+    border-radius: 0px;
 }
 #btn-2{
     margin-bottom: 40px;
+    border-radius: 0px;
 }
 footer{
     padding-top: 10px;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     background: rgba(253, 131, 5, 0.4);
-    margin-top: 60px;
+    margin-top: 45px;
     color: #212529;
 }
