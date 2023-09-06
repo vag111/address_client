@@ -1,8 +1,5 @@
 package main.java.domain;
 
-/**
-* Класс данных о посетителях
-*/
 public class Address {
 	private Long id;
 	// клиент
@@ -13,11 +10,13 @@ public class Address {
 	private Integer building;
 	// номер офиса
 	private Integer office;
+
 	// внешний ключ для связи с моделью City
 	private Long cityId;
 	// навигационное свойства - ссылка на город
 	private City city;
-	
+
+
 	public Address() {
 		
 	}
@@ -27,7 +26,6 @@ public class Address {
 		this.building = building;
 		this.office = office;
 		this.cityId = cityId;
-		this.city = city;
 	}
 	public Address(String person, String street, Integer building, Integer office, Long cityId, City city) {
 		this.person = person;
@@ -35,6 +33,13 @@ public class Address {
 		this.building = building;
 		this.office = office;
 		this.cityId = cityId;
+		this.city = city;
+	}
+	public Address(String person, String street, Integer building, Integer office, City city) {
+		this.person = person;
+		this.street = street;
+		this.building = building;
+		this.office = office;
 		this.city = city;
 	}
 	public Address(Long id, String person, String street, Integer building, Integer office, Long cityId) {
@@ -52,6 +57,14 @@ public class Address {
 		this.building = building;
 		this.office = office;
 		this.cityId = cityId;
+		this.city = city;
+	}
+	public Address(Long id, String person, String street, Integer building, Integer office, City city) {
+		this.id = id;
+		this.person = person;
+		this.street = street;
+		this.building = building;
+		this.office = office;
 		this.city = city;
 	}
 
@@ -100,6 +113,14 @@ public class Address {
 	public void setCityId(Long cityId) {
 		this.cityId = cityId;
 	}
+	public String getCity() {
+		return city.getCity();
+	}
+	public void setCity(City city) {
+		this.city = city;
+	}
+
+
 
 	@Override
 	public String toString() {

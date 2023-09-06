@@ -14,42 +14,42 @@
     </welcome-file-list>
     <servlet>
         <description></description>
-        <display-name>ComputerServlet</display-name>
-        <servlet-name>ComputerServlet</servlet-name>
-        <servlet-class>main.java.controller.city.ComputerServlet</servlet-class>
+        <display-name>AddressServlet</display-name>
+        <servlet-name>AddressServlet</servlet-name>
+        <servlet-class>main.java.controller.address.AddressServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ComputerServlet</servlet-name>
-        <url-pattern>/ComputerServlet</url-pattern>
+        <servlet-name>AddressServlet</servlet-name>
+        <url-pattern>/AddressServlet</url-pattern>
     </servlet-mapping>
     <servlet>
         <description></description>
-        <display-name>VisitorServlet</display-name>
-        <servlet-name>VisitorServlet</servlet-name>
-        <servlet-class>main.java.controller.address.VisitorServlet</servlet-class>
+        <display-name>CityServlet</display-name>
+        <servlet-name>CityServlet</servlet-name>
+        <servlet-class>main.java.controller.city.CityServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>VisitorServlet</servlet-name>
-        <url-pattern>/VisitorServlet</url-pattern>
+        <servlet-name>CityServlet</servlet-name>
+        <url-pattern>/CityServlet</url-pattern>
     </servlet-mapping>
     <servlet>
         <description></description>
-        <display-name>VisitServlet</display-name>
-        <servlet-name>VisitServlet</servlet-name>
-        <servlet-class>main.java.controller.visit.VisitServlet</servlet-class>
+        <display-name>RegionServlet</display-name>
+        <servlet-name>RegionServlet</servlet-name>
+        <servlet-class>main.java.controller.region.RegionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>VisitServlet</servlet-name>
-        <url-pattern>/VisitServlet</url-pattern>
+        <servlet-name>RegionServlet</servlet-name>
+        <url-pattern>/RegionServlet</url-pattern>
     </servlet-mapping>
     <servlet>
         <description></description>
-        <display-name>ComputerStatusServlet</display-name>
-        <servlet-name>ComputerStatusServlet</servlet-name>
-        <servlet-class>main.java.controller.computerStatus.ComputerStatusServlet</servlet-class>
+        <display-name>CountryServlet</display-name>
+        <servlet-name>CountryServlet</servlet-name>
+        <servlet-class>main.java.controller.country.CountryServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ComputerStatusServlet</servlet-name>
-        <url-pattern>/ComputerStatusServlet</url-pattern>
+        <servlet-name>CountryServlet</servlet-name>
+        <url-pattern>/CountryServlet</url-pattern>
     </servlet-mapping>
 </web-app>

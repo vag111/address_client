@@ -1,10 +1,5 @@
 package main.java.domain;
 
-import java.util.Date;
-
-/**
-* Класс данных о посещениях компьютерного клуба
-*/
 public class Region {
 	private Long id;
 	// регион
@@ -14,7 +9,8 @@ public class Region {
 	private Long countryId;
 	// Навигационное свойства - ссылка на страну
 	private Country country;
-	
+
+
 	public Region() {
 		
 	}
@@ -39,6 +35,7 @@ public class Region {
 		this.country = country;
 	}
 
+
     public Long getId() {
 		return id;
 	}
@@ -62,18 +59,13 @@ public class Region {
 	public void setCountryId(Long countryId) {
 		this.countryId = countryId;
 	}
-	//public String getVisitor() {
-	//	return address.getSurname() + " " + address.getName() + " " + address.getPatronymic();
-	//}
-	//public void setVisitor(Address address) {
-	//	this.address = address;
-	//}
-	//public String getComputer() {
-	//	return city.getComputerName();
-	//}
-	//public void setComputer(City city) {
-	//	this.city = city;
-	//}
+	public String getCountry() {
+		return country.getCountryShort();
+	}
+	public void setCountry(Country country) {
+		this.country = country;
+	}
+
 
 	@Override
 	public String toString() {

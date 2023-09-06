@@ -1,14 +1,12 @@
 package main.java.domain;
 
-/**
-* Класс данных о статусах компьютера
-*/
 public class Country {
 	private Long id;
 	// полное наименование страны
 	private String countryFull;
 	// краткое наименование страны
 	private String countryShort;
+
 
 	public Country() {
 		
@@ -44,6 +42,7 @@ public class Country {
 	public void setCountryShort(String countryShort) {
 		this.countryShort = countryShort;
 	}
+
 
 	@Override
 	public String toString() {

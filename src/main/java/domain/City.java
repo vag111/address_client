@@ -1,19 +1,16 @@
 package main.java.domain;
 
-import javax.swing.plaf.synth.Region;
-
-/**
-* Класс данных о компьютерах
-*/
 public class City {
 	private Long id;
 	// город
 	private String city;
+
 	// внешний ключ для связи с моделью Region
 	private Long regionId;
 	// Навигационное свойства - ссылка на регион
 	private Region region;
-	
+
+
 	public City() {
 		
 	}
@@ -38,6 +35,7 @@ public class City {
 		this.region = region;
 	}
 
+
     public Long getId() {
 		return id;
 	}
@@ -61,12 +59,10 @@ public class City {
 	public void setRegionId(Long regionId) {
 		this.regionId = regionId;
 	}
-	//public String getComputerStatus() {
-	//	return computerStatus.getComputerStatus();
-	//}
-	//public void setStatus(ComputerStatus computerStatus) {
-	//	this.computerStatus = computerStatus;
-	//}
+	public String getRegion() {	return region.getRegion(); }
+	public void setRegion(Region region) {
+		this.region = region;
+	}
 
 	@Override
 	public String toString() {
