@@ -28,8 +28,8 @@
 				<th scope="col">Код</th>
 				<th scope="col">Краткое наименование страны</th>
 				<th scope="col">Полное наименование страны</th>
-					<!-- <th scope="col">Редактировать</th>
-					<th scope="col">Удалить</th> -->
+				<th scope="col">Редактировать</th>
+				<th scope="col">Удалить</th>
 			</tr>
 			</thead>
 
@@ -39,16 +39,16 @@
 					<td>${country.getId()}</td>
 					<td>${country.getCountryShort()}</td>
 					<td>${country.getCountryFull()}</td>
-						<!-- <td width="20" id="td-edit">
-							<a href='<c:url value="/editComputerStatus?id=${computerStatus.getId()}" />'
-							   role="button" class="btn btn-outline-secondary">
-								<img alt="Редактировать" src="images/icon-edit.png"></a>
-						</td>
-						<td width="20" id="td-delete">
-							<a href='<c:url value="/deleteComputerStatus?id=${computerStatus.getId()}"/>'
-							   role="button" class="btn btn-outline-secondary">
-								<img alt="Удалить" src="images/icon-delete.png"></a>
-						</td> -->
+					<td style="text-align: center">
+						<a href='<c:url value="/editCountry?id=${country.getId()}" />'
+						   role="button" class="btn btn-outline-secondary border-0" id="edit_btn">
+							<img alt="Редактировать" src="images/edit.png" id="edit_img"></a>
+					</td>
+					<td style="text-align: center">
+						<a href='<c:url value="/deleteCountry?id=${country.getId()}"/>'
+						   role="button" class="btn btn-outline-secondary border-0" id="delete_btn">
+							<img alt="Удалить" src="images/delete.png" id="delete_img"></a>
+					</td>
 				</tr>
 			</c:forEach>
 			</tbody>
